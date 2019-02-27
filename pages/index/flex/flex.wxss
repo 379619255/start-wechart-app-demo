@@ -1,0 +1,9 @@
+/* pages/index/flex/flex.wxss */
+.placeholder{
+  margin: 5px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: #EBEBEB;
+  height: 2.3em;
+  color: #cfcfcf;
+}

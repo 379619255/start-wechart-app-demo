@@ -1,0 +1,65 @@
+<!--pages/index/flex/flex.wxml-->
+<view class='page'>
+  <view class='page__hd'>
+    <view class='page__title'>flex</view>
+    <view class="page__desc">Flex布局学习 Flex,全称为Flexible Box的缩写，意为“弹性布局”，用来为盒模型提供最大的灵活性。</view>
+  </view>
+
+
+  <view class='page__bd page__bd_spacing'>
+    <view class='weui-flex'>
+      <view class='weui-flex__item'>
+        <view class='placeholder'>weUI</view>
+      </view>
+    </view>
+
+    <view class='weui-flex'>
+      <view class='weui-flex__item'>
+        <view class="placeholder">weui</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder">weui</view>
+      </view>
+    </view>
+
+    <view class='weui-flex'>
+      <view class='weui-flex__item'>
+        <view class='placeholder'>weui</view>
+      </view>
+      <view class='weui-flex__item'>
+        <view class='placeholder'>weui</view>
+      </view>
+      <view class='weui-flex__item'>
+        <view class='placeholder'>weui</view>
+      </view>
+    </view>
+
+    <view class='weui-flex'>
+      <view class="weui-flex__item">
+        <view class="placeholder">weui</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder">weui</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder">weui</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder">weui</view>
+      </view>
+    </view>
+
+    <view class='weui-flex'>
+      <view>
+        <view class="placeholder">weui</view>
+      </view>
+      <view class="weui-flex__item">
+        <view class="placeholder">weui</view>
+      </view>
+      <view>
+        <view class="placeholder">weui</view>
+      </view>
+    </view>
+
+  </view>
+</view>

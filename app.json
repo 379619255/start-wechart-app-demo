@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/button/button",
+    "pages/index/list/list",
+    "pages/index/input/input",
+    "pages/index/slider/slider",
+    "pages/index/uploader/uploader",
+    "pages/index/article/article",
+    "pages/index/badge/badge",
+    "pages/index/gallery/gallery",
+    "pages/index/icons/icons",
+    "pages/index/loadmore/loadmore",
+    "pages/index/panel/panel",
+    "pages/index/preview/preview",
+    "pages/index/progress/progress",
+    "pages/index/dialog/dialog",
+    "pages/index/msg/msg",
+    "pages/index/picker/picker",
+    "pages/index/toast/toast",
+    "pages/index/tabbar/tabbar",
+    "pages/index/searchbar/searchbar"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信小程序学习",
+    "navigationBarTextStyle":"black"
+  },
+  "networkTimeout":{
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug":true
+}

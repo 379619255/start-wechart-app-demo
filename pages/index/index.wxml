@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="page">
+  <!-- 小程序首页-->
+  <view class='page__hd'>
+    <view class='page__title'>WEUI</view>
+    <view class='page__desc'>微信小程序控件学习</view>
+  </view>
+
+
+  <!--display:block 指定为块内容器模式，总是使用新行开始显示，微信小程序的视图容器(view,scroll-view和swiper)默认都是dispaly:block。
+display:flex:指定为行内容器模式，在一行内显示子元素，可以使用flex-wrap属性指定其是否换行，flex-wrap有三个值:nowrap(不换行),wrap(换行),wrap-reverse(换行第一行在下面)-->
+  <view class="page__bd page__bd_spacing">
+    <view class="kind-list">
+      <block wx:for="{{list}}" wx:key="id">
+        <view class="kind-list__item">
+          <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
+            <view class="weui-flex__item">{{item.name}}</view>
+            <image class="kind-list__img" src="images/icon_nav_{{item.id}}.png"></image>
+          </view>
+
+          <!--
+          在组件上使用 wx:for 控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。
+          默认数组的当前项的下标变量名默认为 index，数组当前项的变量名默认为 item
+          使用 wx:for-item 可以指定数组当前元素的变量名，
+          使用 wx:for-index 可以指定数组当前下标的变量名
+          https://blog.csdn.net/yellow_hill/article/details/82191501
+
+          *this 代表在 for 循环中的 item 本身，这种表示需要 item 本身是一个唯一的字符串或者数字，
+
+          wx:for等价与wx:for-items是循环数组用的；而wx:for-item则是给列表赋别名用的
+          -->
+          <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+            <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+              <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                <navigator url="{{page}}/{{page}}" class="weui-cell weui-cell_access">
+                  <view class="weui-cell__bd">{{page}}</view>
+                  <!--出现向右边的箭头-->
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+              </block>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+
+  <!--图片-->
+  <view class='page__ft'>
+    <image src="images/icon_footer.png" style="width: 84px; height: 19px;"></image>
+  </view>
+</view>

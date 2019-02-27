@@ -1,0 +1,7 @@
+/* pages/index/article/article.wxss 样式 */
+.page{
+  background-color: #FFFFFF;
+}
+.image{
+  margin: 4px 0;
+}

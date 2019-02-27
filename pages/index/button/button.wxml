@@ -1,0 +1,31 @@
+<view class='page'>
+  <view class='page__hd'>
+    <view class='page__title'>Button控件学习</view>
+    <view class='page__desc'>原生button的学习</view>
+  </view>
+
+  <view class='page__bd page__bd_spacing'>
+    <!--type按钮的类型 primary绿色  default 白色  warn 红色-->
+    <button class='weui-btn' type='primary'>页面主操作 Normal</button>
+    <!--disabled='true' 禁用-->
+    <button class='weui-btn' type='primary' disabled='true'>页面主操作 Disabled(禁用)</button>
+
+    <button class='weui-btn' type='defaule'>页面次要操作 Normal</button>
+    <button class="weui-btn" type="default" disabled="true">页面次要操作 Disabled</button>
+
+    <button class='weui-btn' type='warn'>警告类操作 Normal</button>
+    <button class='weui-btn' type='warn' disabled='true'>警告类操作 Disabled</button>
+
+    <view class='button-sp-area'>
+      <!-- plain='true' 按钮是否镂空，背景色透明-->
+      <button class='weui-btn' type='primary' plain='true'>镂空/背景透明</button>
+      <button class='weui-btn' type='primary' plain='true' disabled='true'>镂空不可以点击</button>
+      <button class='weui-btn' type='default' plain='true'>默认镂空</button>
+      <button class='weui-btn' type='default' plain='true' disabled='true'>默认不可点击镂空</button>
+    
+      <button class="weui-btn mini-btn" type="primary" size="mini">按钮</button>
+      <button class="weui-btn mini-btn" type="default" size="mini">按钮</button>
+      <button class="weui-btn mini-btn" type="warn" size="mini">按钮</button>
+    </view>
+  </view>
+</view>
